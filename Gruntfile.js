@@ -14,15 +14,19 @@ module.exports = function(grunt) {
 		config: config,
 
 		copy: {
-			dist: {
-				src: '<%= config.app %>/index.html',
-				dest: '<%= config.dist %>/index.html'
+			dist_html: {
+				files: [
+					{
+						'<%= config.dist %>/index.html': '<%= config.app %>/index.html',
+						'<%= config.dist %>/js/index.js': '<%= config.app %>/js/index.js' 						
+					}
+				]
 			}
 		},
 
 		clean: {
 			dist: {
-				src: '<%= config.dist %>/index.html'
+				src: ['<%= config.dist %>/**/*']
 			}
 		}
 	});
