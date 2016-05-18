@@ -17,8 +17,11 @@ module.exports = function(grunt) {
 			dist_html: {
 				files: [
 					{
-						'<%= config.dist %>/index.html': '<%= config.app %>/index.html',
-						'<%= config.dist %>/js/index.js': '<%= config.app %>/js/index.js' 						
+						expand: true,
+						cwd: '<%= config.app %>/',
+						src: '*.html',
+						dest: '<%= config.dist %>/',
+						ext: '.min.html'					
 					}
 				]
 			}
