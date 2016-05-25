@@ -4,6 +4,14 @@
 	<title></title>
 </head>
 <body>
-
+<script type="text/javascript">
+	function sum(num1, num2) {
+	    return num1 + num2;
+	}
+	function callSum(a,b,c){
+	  return sum.apply(this,[a,c]);
+	}
+	console.log(callSum(10,23,332));
+</script>
 </body>
 </html>

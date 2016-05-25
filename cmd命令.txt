@@ -1,0 +1,6 @@
+cmd 命令
+
+1.创建文件夹 md或者mkdir 文件夹名
+2.创建文件 cd.>a.txt
+3.打开文件 start a.txt
+4.查看文件 type a.txt
