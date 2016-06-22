@@ -7,7 +7,7 @@ learn grunt by the imooc
 
 首先明确一点：JavaScript中构造函数是不需要有返回值的，这一点跟Java很类似。可以认为构造函数和普通函数的最大差别就是：构造函数中没有return语句，普通函数可以有return语句；构造函数中会使用this关键字定义成员变量和成员方法，普通的函数不会使用this关键字定义成员变量和方法。
 
-···js
+```js
 function Person(name,sex)   
 {    
         this.name = name;  
